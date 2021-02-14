@@ -1,0 +1,409 @@
+$_colYelow : linear-gradient(180deg, #FFDC00 -43.75%, #FFB000 100%);
+$_fontMoser : 'Montserrat', sans-serif;
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    
+}
+.wrapper{
+    max-width: 1060px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+h2{
+    font-size: 24px;
+    font-family: 600;
+    margin: 0;
+}
+// header style
+.header-top{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .logo{
+        display: flex;
+        align-items: center;
+        &-image{
+            margin-right: 23px;
+            display: block;
+            width: 93px;
+            height: 52px;
+            background-image: url(../img/logo.png);
+        }
+    }
+    nav{
+       .social{
+        display: flex;
+        &-item{
+            list-style-type: none;
+            margin-left: 10px ;
+            margin-right: 10px;
+            &_link{
+                display: block;
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 600;
+                color:#000;
+                background-repeat: no-repeat;
+            }
+            .fb{
+                width: 12px;
+                height: 22px;
+                background-image: url(../img/social/icon_01.svg);
+            }
+            .instagram{
+                width: 20px;
+                height: 20px;
+                background-image: url(../img/social/icon_02.svg);
+            }
+            .phone{
+                width: 20px;
+                height: 20px;
+                padding-left: 30px;
+                background-image: url(../img/social/icon_03.svg);
+            }
+        }
+        &-item:hover{
+            opacity: 0.75;
+        }
+       }
+    }
+}
+// banner style
+.banner-section {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-image: url(../img/bg_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 190px;
+    padding-bottom: 301px;
+    color: #fff;
+    letter-spacing: 1px;z-index: 0;
+}
+
+.title{
+    font-weight: 600;
+    font-size: 48px;
+    margin: 0;
+}
+.title-p{
+    max-width: 450px;
+    font-family: $_fontMoser;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top:20px;
+    margin-bottom: 40px;
+    line-height: 23px;
+}
+.btn{
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 13px 28px;
+    background: $_colYelow;
+}
+//End banner style
+// Our advantages
+.our-advant{
+    padding-top: 124px;
+    padding-bottom: 124px;
+    position: relative;
+    background-color: #F0F0F0;
+    .wrapper{
+      .advantages{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-column-gap: 70px;
+         &-item{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .big_number{
+                font-size: 48px;
+                font-weight: 600;
+            }
+            @import url(https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic);
+            .gradient-text {
+                margin-right: 15px;
+                font-size: 48px;
+                text-transform: uppercase;
+                background: linear-gradient(180deg, #FFDC00 -43.75%, #FFB000 100%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                color: #0B2349;
+                display: table;
+            }
+            &_text{
+                //styleName: ЗЩШТЕЫ;
+                font-family: $_fontMoser;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 21px;
+
+            }
+         }
+      }  
+        
+    }
+}
+
+.description-section{
+    max-width: 1440px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    bottom: 54px;
+    background-image: url(../img/coust/bg_fog.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    h2.description-title {
+        position: relative;
+        top: 65px;
+    }
+    .description-title{
+        margin-top: 0;
+        color:#fff;
+        font-weight: 600;
+        font-size: 24px;
+        
+        
+    }
+    .description-clothes_image{
+        margin-top: 185px;
+        position: relative;
+        left: 45px;
+        width: 78%;
+    }
+    
+}
+.scythian-costumes{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    font-weight: 600;
+    position: relative;
+    &-title{
+        
+        font-size: 24px;
+        margin-bottom: 65px;
+    }
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px 30px;
+}
+.grid::before{
+    content: "";
+    position: absolute;
+    left: 135px;
+    top: calc(50% - 49px);
+    background-image: url(../img/slide_l.svg);
+    background-repeat: no-repeat;
+    width: 72px;
+    height: 68px;
+    cursor: pointer;
+}
+.grid::after{
+    content: "";
+    position: absolute;
+    right: 135px;
+    top: calc(50% - 25px);
+    background-image: url(../img/slide_r.svg);
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.scythian-costumes-title{
+    text-align: center;
+}
+.grid-item{
+    border: 1px solid #FFB000;
+    box-shadow: 4px 4px 20px #525050;
+    transition: 0.3s ease-in;
+}
+.grid-item:hover{
+    transform: scale(1.08);
+}
+.grid-title{
+    margin-top: 0;
+}
+.grid-bg-white{
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    .grid-price{
+        color: #FFB000;
+    }
+    
+}
+.grid-btn-more{
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1F1E1E;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 10px;
+    position: relative;
+    top: 3px;
+    align-items: center;
+    
+    
+}
+.grid-btn{
+    text-decoration: none;
+    color:#fff;
+    display: block;
+   
+}
+.grid-btn::after{
+    content: "";
+    position: absolute;
+    background-image: url(../img/Arrow.svg);
+    background-repeat: no-repeat;
+    display: block;
+    left: calc(50% - 33px);
+    top: calc(50% - 2px);
+    width: 24px;
+    height: 10px;
+}
+.grid-more{
+    background-image: url(../img/eye.svg);
+    background-repeat: no-repeat;
+    display: block;
+    width: 20px;
+    height: 14px;
+
+}
+.thumb{
+    min-width: 200px;
+    min-height: 215px;
+    // background-image: url(../img/coust/n_01.png);
+    &-img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+
+    /**********All styles popup**********/
+.popup {
+    padding: 35px 15px 10px 15px;
+    position:fixed;
+    top:10px;
+    transform: translate(20%, 0);
+    display:none;
+    overflow:hidden;
+    border:1px solid #ccc;
+    background:#fff;
+    border-radius:15px;
+    z-index:100;
+    behavior: url(PIE.htc);
+}
+
+
+.close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    
+}
+
+.close::before,
+.close::after {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 10px;
+    width: 26px;
+    height: 2px;
+    background: $_colYelow;
+    
+    
+}
+
+.close::before {
+    transform: rotate(45deg);
+    
+}
+
+.close::after  {
+    transform: rotate(-45deg);
+    
+}
+.popup-img{
+    width: 117px;
+    height: 174px;
+}
+
+.box-4{
+    height: 525px;
+    width: 367px;
+    box-shadow: 10px 10px 15px #b1aaaa;}
+.description-popup_left{
+    align-items: center;
+}
+.description-popup-top, 
+.description-popup_left{
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+}
+.description-popup_right{
+    padding: 0 30px;
+    line-height: 21px;
+
+}
+.description-popup_right h2{
+    margin-bottom: 30px;
+}
+.description-popup_right p,
+.description-popup-bottom_top p,
+.description-popup-bottom_bot ul {
+    font-family: $_fontMoser;
+    font-size: 16px;
+    line-height: 1.4rem;
+}
+.description-popup-bottom_bot span{
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.description-popup-bottom_bot ul li{
+    list-style-type: none;
+}
+    /**********popup with form**********/
+.detailed_description {
+    max-width:1140px;
+}
+    /**********overlay styles**********/
+#overlay {
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    display:none;
+    background:#fff;
+    opacity:.8;
+}
